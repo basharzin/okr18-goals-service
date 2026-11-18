@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "rawPath": "/api/goals/summary",
+  "rawQueryString": "",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "requestContext": {
+    "http": {
+      "method": "GET",
+      "path": "/api/goals/summary",
+      "sourceIp": "127.0.0.1"
+    },
+    "authorizer": {
+      "jwt": {
+        "claims": {
+          "sub": "user-demo-a",
+          "cognito:groups": "[user]"
+        }
+      }
+    }
+  },
+  "isBase64Encoded": false
+}

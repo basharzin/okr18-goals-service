@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "rawPath": "/api/goals",
+  "rawQueryString": "",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "requestContext": {
+    "http": {
+      "method": "POST",
+      "path": "/api/goals",
+      "sourceIp": "127.0.0.1"
+    },
+    "authorizer": {
+      "jwt": {
+        "claims": {
+          "sub": "user-demo-a",
+          "cognito:groups": "[user]"
+        }
+      }
+    }
+  },
+  "isBase64Encoded": false,
+  "body": "{\"title\": \"Run a 10k race\", \"description\": \"Train 3 times a week\", \"category\": \"Health\", \"year\": 2026, \"deadline\": \"2026-12-31\"}"
+}

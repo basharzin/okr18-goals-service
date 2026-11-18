@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "rawPath": "/api/goals",
+  "rawQueryString": "",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "requestContext": {
+    "http": {
+      "method": "POST",
+      "path": "/api/goals",
+      "sourceIp": "127.0.0.1"
+    },
+    "authorizer": {
+      "jwt": {
+        "claims": {
+          "sub": "user-demo-a",
+          "cognito:groups": "[user]"
+        }
+      }
+    }
+  },
+  "isBase64Encoded": false,
+  "body": "{\"title\": \"x\", \"category\": \"Fun\", \"year\": 2030, \"deadline\": \"soon\"}"
+}
